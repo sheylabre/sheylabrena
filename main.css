@@ -1,0 +1,50 @@
+.fondo{
+    background-color: #36846B;
+    width: 100%;
+    height: 651px;
+}
+
+.fondo2{
+    background-color: #F1B24B;
+    border-radius: 100px;
+    width: 50%;
+    text-align: center;
+    height: 500px;
+    margin: 10%;
+}
+
+.margen{
+    margin: 14%;
+}
+
+
+h1{
+    color: white;
+}
+
+.proyectos{
+    background-color: #BE3144;
+    width: 50%;
+    height: 300px;
+}
+
+.project1{
+    background-color:#ECE58A;
+    widows: 100%;
+    height: 300px;
+}
+
+.project2{
+    background-color:#84D270;
+    widows: 100%;
+    height: 200px;
+}
+
+.project3{
+    background-color:#1FB57B;
+    widows: 100%;
+    height: 100px;
+}
+
+
+
