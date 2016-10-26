@@ -1,50 +1,81 @@
+
 .fondo{
-    background-color: #36846B;
+    background-color: #A42127;
     width: 100%;
     height: 651px;
 }
 
-.fondo2{
+.fondo_head_me{
     background-color: #F1B24B;
     border-radius: 100px;
     width: 50%;
     text-align: center;
-    height: 500px;
+    padding: 8%;
     margin: 10%;
+}
+.head_me{
+    margin: 0 0 8% 0 ;
+}
+
+.frase{
+    margin: 15% 0 0 0;
 }
 
 .margen{
-    margin: 14%;
+    margin: 35% 0 0 0 ;
 }
-
-
-h1{
-    color: white;
-}
-
-.proyectos{
-    background-color: #BE3144;
-    width: 50%;
-    height: 300px;
-}
-
 .project1{
     background-color:#ECE58A;
-    widows: 100%;
-    height: 300px;
+    height: 325px;
+    text-align: center;
 }
-
 .project2{
     background-color:#84D270;
-    widows: 100%;
-    height: 200px;
+    height: 325px;
+    text-align: center;
 }
 
 .project3{
     background-color:#1FB57B;
-    widows: 100%;
-    height: 100px;
+    height: 325px;
+    text-align: center;
+}
+.project4{
+    background-color: #F36B6B;
+    height: 325px;
+    text-align: center;
+}
+.project5{
+    background-color: #E5C955;
+    height: 325px;
+    text-align: center;
+}
+.project6   {
+    background-color: #FE7847;
+    height: 325px;
+    text-align: center;
 }
 
+.pie_de_pagina{
+    background-color: #292929;
 
+}
+
+.icono{
+    text-align: center;
+    width: 10%;
+    margin: 8% 5% 5%;
+}
+
+.txt_pie_de_pagina{
+    color: white;
+    margin:2% 0 0 0  ;
+}
+
+.autor{
+    background-color: #393E46;
+    height: 25px;
+    text-align: center;
+    color: white;
+}
 
