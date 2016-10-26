@@ -13,15 +13,21 @@
     width: 40%;
     text-align: center;
     padding: 5%;
-    margin: 15% 0 0 30%;
+    margin: 12% 0 0 30%;
     opacity: 0.8;
 }
 .head_me{
-    margin: 0 0 8% 0 ;
+    margin: 6% 0   ;
 }
+
 
 .background_me{
     background-color: #A42127;
+    height: 500px;
+}
+
+.progreso{
+    background-color:#E0C45C ;
     height: 500px;
 }
 
