@@ -1,4 +1,3 @@
-
 .fondo{
     background: url('./img/paisaje.jpg');
     height: 651px;
@@ -8,7 +7,7 @@
 }
 
 .fondo_head_me{
-    background-color: #F1B24B;
+    background-color: #FBD66F;
     border-radius: 20px;
     width: 40%;
     text-align: center;
@@ -20,14 +19,21 @@
     margin: 6% 0   ;
 }
 
-
 .background_me{
-    background-color: #A42127;
+    background-color: #36846B;
     height: 500px;
 }
 
+
+.perfil{
+    margin:5% 15%;
+    width: 50%;
+    background-color: #4F5E7F;
+    padding: 2%;
+}
+
 .progreso{
-    background-color:#E0C45C ;
+    background-color:#A42127;
     height: 500px;
 }
 
@@ -46,7 +52,7 @@
 }
 
 .project3{
-    background-color:#1FB57B;
+    background-color:#77B5A6;
     height: 325px;
     text-align: center;
 }
