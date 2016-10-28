@@ -1,3 +1,11 @@
+html {
+    font-family: 'Quantico', sans-serif;
+}
+
+html * {
+    font-family: inherit!important;
+}
+
 .fondo{
     background: url('./img/paisaje.jpg');
     height: 651px;
@@ -21,22 +29,39 @@
 
 .background_me{
     background-color: #36846B;
-    height: 500px;
+    height: 550px;
 }
 
+.about_me{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
 
 .perfil{
-    margin:5% 15%;
-    width: 50%;
+    margin:0 15%;
+    width: 60%;
     background-color: #4F5E7F;
     padding: 2%;
+    border-radius: 50%;
 }
 
 .progreso{
     background-color:#A42127;
     height: 500px;
 }
+/*----------------------------------*/
+input {
+        margin: 0px 5px;
+        padding: 5px;
+        width: 30%;
+    }
 
+    .example {
+        margin-top:0;
+        width: 500px;
+        font-family: "Roboto Condensed";
+    }
+/* ----------------------------------*/
 .margen{
     margin: 35% 0 0 0 ;
 }
