@@ -29,7 +29,7 @@ html * {
 
 .background_me{
     background-color: #36846B;
-    height: 550px;
+    height: 600px;
 }
 
 .about_me{
@@ -47,20 +47,35 @@ html * {
 
 .progreso{
     background-color:#A42127;
-    height: 500px;
+    height: 550px;
 }
-/*----------------------------------*/
-input {
-        margin: 0px 5px;
-        padding: 5px;
-        width: 30%;
-    }
+/*---------------------------------*/
+.circle {
+  width: 100px;
+  margin: 5% 8%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
 
-    .example {
-        margin-top:0;
-        width: 500px;
-        font-family: "Roboto Condensed";
-    }
+.circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+  font: 15px/1.3 Arial, sans-serif;
+}
+
 /* ----------------------------------*/
 .margen{
     margin: 35% 0 0 0 ;

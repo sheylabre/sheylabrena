@@ -1,3 +1,5 @@
- function atest (elemSelector, range) {
-        $(elemSelector).data("animated", false).textProgress(range.value);
-    }
+ $('.second.circle').circleProgress({
+  value: 0.6
+}).on('circle-animation-progress', function(event, progress) {
+  $(this).find('strong').html(parseInt(60 * progress) + '<i>%</i>');
+});
