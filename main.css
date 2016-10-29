@@ -6,22 +6,71 @@ html * {
     font-family: inherit!important;
 }
 
-.fondo{
-    background: url('./img/paisaje.jpg');
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*.background{
+    background: url('');
     height: 651px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
+*/
 
-.fondo_head_me{
-    background-color: #FBD66F;
+/*----------------------------------------*/
+.style-0 path { fill: #FF9900; }
+.style-1 path { fill: #424242; }
+.style-2 path { fill: #E9E9E9; }
+.style-3 path { fill: #BCBCBC; }
+.style-4 path { fill: #3299BB; }
+
+/*------------------------------------------*/
+.gears-d3-canvas {
+    background-color: #506E86;
+  margin: 0 auto;
+  max-height: 768px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.gears-d3-canvas:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.gears-d3-canvas svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.background_head_me{
+    background-color: transparent; /*#FBD66F;*/
     border-radius: 20px;
     width: 40%;
+    min-width: 240px;
     text-align: center;
     padding: 5%;
-    margin: 12% 0 0 30%;
+    /*
+    margin: 0 auto;
     opacity: 0.8;
+    */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1000;
 }
 .head_me{
     margin: 6% 0   ;
@@ -29,7 +78,7 @@ html * {
 
 .background_me{
     background-color: #36846B;
-    height: 600px;
+
 }
 
 .about_me{
@@ -38,7 +87,7 @@ html * {
 }
 
 .perfil{
-    margin:0 15%;
+    margin:0 15% 8%;
     width: 60%;
     background-color: #4F5E7F;
     padding: 2%;
@@ -47,12 +96,16 @@ html * {
 
 .progreso{
     background-color:#A42127;
-    height: 550px;
+
+}
+
+.txtHabilidades{
+    padding: 4% 0 0;
 }
 /*---------------------------------*/
 .circle {
   width: 100px;
-  margin: 5% 8%;
+  margin: 3% 8%;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -84,6 +137,10 @@ html * {
     background-color:#ECE58A;
     height: 325px;
     text-align: center;
+}
+
+.project1:hover{
+
 }
 .project2{
     background-color:#84D270;
@@ -119,7 +176,7 @@ html * {
 
 .icono{
     text-align: center;
-    width: 10%;
+    width: 40px;
     margin: 8% 5% 5%;
 }
 
