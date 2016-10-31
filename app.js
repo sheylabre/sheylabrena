@@ -1,4 +1,3 @@
-
  $('.second.circle').circleProgress({
   value: 0.6
 }).on('circle-animation-progress', function(event, progress) {
@@ -121,4 +120,3 @@ var _randomiseScene = function(transition) {
 };
 
 main();
-

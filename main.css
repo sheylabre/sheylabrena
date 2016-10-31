@@ -11,16 +11,6 @@ html, body {
     width: 100%;
 }
 
-/*.background{
-    background: url('');
-    height: 651px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-*/
-
-/*----------------------------------------*/
 .style-0 path { fill: #FF9900; }
 .style-1 path { fill: #424242; }
 .style-2 path { fill: #E9E9E9; }
@@ -29,7 +19,7 @@ html, body {
 
 /*------------------------------------------*/
 .gears-d3-canvas {
-    background-color: #506E86;
+  background-color: #506E86;
   margin: 0 auto;
   max-height: 768px;
   position: relative;
@@ -54,16 +44,7 @@ html, body {
 }
 
 .background_head_me{
-    background-color: transparent; /*#FBD66F;*/
-    border-radius: 20px;
-    width: 40%;
-    min-width: 240px;
     text-align: center;
-    padding: 5%;
-    /*
-    margin: 0 auto;
-    opacity: 0.8;
-    */
     position: absolute;
     top: 0;
     left: 50%;
@@ -72,8 +53,28 @@ html, body {
             transform: translateX(-50%);
     z-index: 1000;
 }
+
+.hello{
+  margin: 8% 0 5% 35%;
+  font-size: 170%;
+  color: black;
+  background-color: #D6F7AD;
+  opacity: 0.8;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.name{
+  font-size: 216%;
+  color: black;
+  background-color: #D6F7AD;
+  opacity: 0.8;
+  border-radius: 5px;
+
+}
+
 .head_me{
-    margin: 6% 0   ;
+    margin: 5% 0   ;
 }
 
 .background_me{
