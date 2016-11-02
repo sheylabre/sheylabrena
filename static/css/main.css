@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/*!
+ * Sheyla's Portfolio CSS
+ * Author: Sheyla Breña Sicha
+ * Version: 1.0
+ * Made with love with vanilla CSS :3
+ */
+
+/**
+ * General
+ */
+    * {
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+        min-height: 400px;
+        font-family: 'quantico', sans-serif;
+    }
+
+    html * {
+        font-family: inherit;
+    }
+
+/**
+ * Estructura
+ */
+    body.page-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+/**
+ * Preloader
+ */
+    body.is-loading {
+        overflow: hidden;
+    }
+
+    body.is-loading .page-preloader{
+        opacity: 1;
+    }
+
+    .page-preloader {
+        z-index: 1000000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.75s ease-in-out;
+        pointer-events: none;
+    }
+
+    .page-preloader .preloader {
+        height: auto;
+        width: auto;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .preloader .pr-circle {
+        height: 80px;
+        width: 80px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .preloader .pr-circle .pr-circle-child {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .preloader .pr-circle .pr-circle-child::before {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        height: 15%;
+        width: 15%;
+        border-radius: 100%;
+        background-color: #FAFAFA;
+        animation: circle-bounce 1.2s infinite ease-in-out both;
+    }
+
+    .preloader .pr-circle .pr-circle-1 {
+        transform: rotate(0deg);
+    }
+
+    .preloader .pr-circle .pr-circle-2 {
+        transform: rotate(30deg);
+    }
+
+    .preloader .pr-circle .pr-circle-3 {
+        transform: rotate(60deg);
+    }
+
+    .preloader .pr-circle .pr-circle-4 {
+        transform: rotate(90deg);
+    }
+
+    .preloader .pr-circle .pr-circle-5 {
+        transform: rotate(120deg);
+    }
+
+    .preloader .pr-circle .pr-circle-6 {
+        transform: rotate(150deg);
+    }
+
+    .preloader .pr-circle .pr-circle-7 {
+        transform: rotate(180deg);
+    }
+
+    .preloader .pr-circle .pr-circle-8 {
+        transform: rotate(210deg);
+    }
+
+    .preloader .pr-circle .pr-circle-9 {
+        transform: rotate(240deg);
+    }
+
+    .preloader .pr-circle .pr-circle-10 {
+        transform: rotate(270deg);
+    }
+
+    .preloader .pr-circle .pr-circle-11 {
+        transform: rotate(300deg);
+    }
+
+    .preloader .pr-circle .pr-circle-12 {
+        transform: rotate(330deg);
+    }
+
+    .preloader .pr-circle .pr-circle-1::before {
+        animation-delay: -1.1s;
+    }
+
+    .preloader .pr-circle .pr-circle-2::before {
+        animation-delay: -1.0s;
+    }
+
+    .preloader .pr-circle .pr-circle-3::before {
+        animation-delay: -0.9s;
+    }
+
+    .preloader .pr-circle .pr-circle-4::before {
+        animation-delay: -0.8s;
+    }
+
+    .preloader .pr-circle .pr-circle-5::before {
+        animation-delay: -0.7s;
+    }
+
+    .preloader .pr-circle .pr-circle-6::before {
+        animation-delay: -0.6s;
+    }
+
+    .preloader .pr-circle .pr-circle-7::before {
+        animation-delay: -0.5s;
+    }
+
+    .preloader .pr-circle .pr-circle-8::before {
+        animation-delay: -0.4s;
+    }
+
+    .preloader .pr-circle .pr-circle-9::before {
+        animation-delay: -0.3s;
+    }
+
+    .preloader .pr-circle .pr-circle-10::before {
+        animation-delay: -0.2s;
+    }
+
+    .preloader .pr-circle .pr-circle-11::before {
+        animation-delay: -0.1s;
+    }
+
+    .preloader .pr-circle .pr-circle-12::before {
+        animation-delay: -0.0s;
+    }
+
+    @keyframes circle-bounce {
+        0%, 80%, 100% {
+            transform: scale(0);
+        }
+        40% {
+            transform: scale(1);
+        }
+    }
+
+/**
+ * Barra de navegación
+ */
+    #header {
+        width: 100%;
+        height: 100vh;
+        min-height: 400px;
+        position: relative;
+    }
+
+    #header nav.menu-wrapper {
+        position: fixed;
+        height: 64px;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 999999;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    #header nav.menu-wrapper .menu {
+        height: 64px;
+        width: 100%;
+    }
+
+    #header nav.menu-wrapper .menu > li.menu-item {
+        width: 150px;
+        height: 64px;
+        line-height: 64px;
+        display: inline-block;
+        border-bottom: 0px solid #BE3144;
+        transition: all .25s ease-in-out;
+        vertical-align: top;
+    }
+
+    #header nav.menu-wrapper .menu > li.menu-item > a {
+        margin: 0;
+        padding: 0;
+        line-height: inherit;
+        transition: all .25s ease-in-out;
+        color: #2F1B41;
+    }
+
+    #header nav.menu-wrapper .menu > li.menu-item:not(#avatar):hover,
+    #header nav.menu-wrapper .menu > li.menu-item:not(#avatar).active {
+        border-bottom: 5px solid #BE3144;
+    }
+
+    #header nav.menu-wrapper .menu > li.menu-item:hover > a,
+    #header nav.menu-wrapper .menu > li.menu-item.active > a {
+        background-color: transparent;
+    }
+
+    #header nav.menu-wrapper .menu > li.menu-item:not(#avatar):hover > a,
+    #header nav.menu-wrapper .menu > li.menu-item:not(#avatar).active > a {
+        color: #BE3144;
+    }
+
+    #header nav.menu-wrapper .menu > li#avatar.menu-item {
+        width: 92px;
+        height: auto;
+        padding: 0 10px;
+        display: inline-block;
+        top: 0;
+        transform: translateY(0) scale(1);
+        transition: all 0.35s ease-in-out;
+        z-index: 999998;
+    }
+
+    #header nav.menu-wrapper .menu > li#avatar.menu-item > a img {
+        margin: 0;
+    }
+
+    #header.is-on-top nav.menu-wrapper .menu > li#avatar.menu-item {
+        top: 0;
+        transform: translateY(160px) scale(3);
+    }
+
+    #header .introduction {
+        position: absolute;
+        top: 350px;
+        left: 0;
+        right: 0;
+    }
+
+/*
+ * Content Styles / Estilos par el contenido
+ */
+    .section {
+        min-height: 100vh; /* viewport height: altura de la pantalla (1vh = (altura de la pantall)/100)*/
+        transition: all 0.25s ease-in-out;
+        padding-top: 128px;
+    }
+
+    #about {
+        background-color: #2F1B41;
+        position: relative;
+        margin: 100px 0;
+    }
+
+    #about::after,
+    #about::before {
+        content: '';
+        display: table;
+        width: 100%;
+        height: 0px;
+        clear: both;
+        position: absolute;
+        right: 0;
+    }
+
+    #about::before {
+        border-bottom: 100px solid #2F1B41;
+        border-right: 100vw solid transparent;
+        top: -100px;
+    }
+
+    #about::after {
+        border-bottom: 100px solid transparent;
+        border-right: 100vw solid #2F1B41;
+        bottom: -100px;
+    }
+
+    #about .profile-picture {
+        border: 4px solid #FAFAFA;
+        display: block;
+        margin: 32px auto;
+        height: 200px;
+        width: 200px;
+    }
+
+    #about p {
+        font-size: 1.25rem;
+        padding: 0 16px;
+    }
+
+    #skills {
+        padding-bottom: 32px;
+    }
+
+    #skills .skill-table {
+        width: 70%;
+        min-width: 600px;
+        display: block;
+        margin: 32px auto;
+    }
+
+    #skills .skill-table .row {
+        margin-bottom: 16px;
+    }
+
+    #skills .skill-table .column,
+    #skills .skill-table .columns {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #skills .skill-table .skill-table-title,
+    #skills .skill-table .skill-table-header {
+        text-align: center;
+    }
+
+    #skills .skill-table .skill-table-title {
+        border-bottom: 2px solid #BE3144;
+    }
+
+    #skills .skill-table .skill-table-header {
+        font-weight: bold;
+    }
+
+    #skills .skill-table .skill-label {
+        height: 20px;
+        width: 100%;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    #skills .skill-table .skill-picture,
+    #skills .skill-table .skill-mark {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #skills .skill-table .skill-level-indicator {
+        background-color: ;
+        height: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #2F1B41;
+        position: relative;
+    }
+
+    #skills .skill-table .skill-level-indicator::after {
+        content: '';
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background-color: #FAFAFA;
+        border: 2px solid #2F1B41;
+        border-radius: 50%;
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-image: url('../img/skill-level-indicator.png');
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    #skills .skill-table .skill-level-1 {
+        width: 10%;
+    }
+
+    #skills .skill-table .skill-level-2 {
+        width: 30%;
+    }
+
+    #skills .skill-table .skill-level-3 {
+        width: 50%;
+    }
+
+    #skills .skill-table .skill-level-4 {
+        width: 70%;
+    }
+
+    #skills .skill-table .skill-level-5 {
+        width: 90%;
+    }
+
+    #projects {
+        background-color: #BE3144;
+        position: relative;
+        margin: 100px 0;
+    }
+
+    #projects::after,
+    #projects::before {
+        content: '';
+        display: table;
+        width: 100%;
+        height: 0px;
+        clear: both;
+        position: absolute;
+        right: 0;
+    }
+
+    #projects::before {
+        border-bottom: 100px solid #BE3144;
+        border-right: 100vw solid transparent;
+        top: -100px;
+    }
+
+    #projects::after {
+        border-bottom: 100px solid transparent;
+        border-right: 100vw solid #BE3144;
+        bottom: -100px;
+    }
+
+    #projects .project-card {
+        display: block;
+        border-radius: 8px;
+        border: 2px solid #FAFAFA;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 32px;
+    }
+
+    #projects .project-card .image {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #projects .project-card .title {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.50s ease-in-out;
+        text-align: center;
+        opacity: 0;
+        font-weight: bold;
+        font-size: 2rem;
+        z-index: 1000;
+    }
+
+    #projects .project-card .title * {
+        color: #FAFAFA;
+    }
+
+    #projects .project-card .overlay {
+        background-color: rgba(47, 27, 65, 0.45);
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        transform: rotateY(0deg);
+        z-index: 999;
+    }
+
+    #projects .project-card .overlay::after {
+        content: "+";
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        font-size: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #projects .project-card:hover .title {
+        opacity: 1;
+    }
+
+    #projects .project-card:hover .overlay {
+        transform: rotateY(180deg);
+        opacity: 1;
+    }
+
+    #projects .project-card:hover .overlay::after {
+        opacity: 0;
+    }
+
+    #contact {
+    }
+
+    #footer .copyright {
+        padding: 16px 0;
+        margin: 0;
+    }
+
+/**
+ * Paleta de colores
+ */
+    .dark-background {
+        background-color: #2F1B41;
+    }
+
+    .dark-text {
+        color: #2F1B41;
+    }
+
+    .light-background {
+        background-color: #FAFAFA;
+    }
+
+    .light-text {
+        color: #FAFAFA;
+    }
+
+    .accent-background {
+        background-color: #BE3144;
+    }
+
+    .accent-text {
+        color: #BE3144;
+    }
+
+/**
+ * Clases auxiliares
+ */
+    .circle {
+        border-radius: 50%;
+    }
+
+    .typed-cursor{
+        opacity: 1;
+        animation: blink-cursor 0.7s infinite;
+    }
+
+    @keyframes blink-cursor{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
