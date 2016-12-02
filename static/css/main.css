@@ -302,7 +302,7 @@
  * Content Styles / Estilos par el contenido
  */
     .section {
-        min-height: 100vh; /* viewport height: altura de la pantalla (1vh = (altura de la pantall)/100)*/
+        min-height: 82vh; /* viewport height: altura de la pantalla (1vh = (altura de la pantall)/100)*/
         transition: all 0.25s ease-in-out;
         padding: 128px 0;
     }
@@ -448,6 +448,10 @@
 
     #skills .skill-table .skill-level-5 {
         width: 90%;
+    }
+
+    .mg-proy {
+        margin-bottom: 8%;
     }
 
     #projects {
